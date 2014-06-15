@@ -29,6 +29,7 @@ GEM
       minitest (~> 5.1)
       thread_safe (~> 0.1)
       tzinfo (~> 1.1)
+    addressable (2.3.6)
     arel (5.0.1.20140414130214)
     better_errors (1.1.0)
       coderay (>= 1.0.0)
@@ -48,6 +49,7 @@ GEM
     debug_inspector (0.0.2)
     erubis (2.7.0)
     eventmachine (1.0.3)
+    excon (0.37.0)
     execjs (2.2.0)
     faraday (0.9.0)
       multipart-post (>= 1.2, < 3)
@@ -61,6 +63,15 @@ GEM
       nokogiri (>= 1.4.4, != 1.5.2, != 1.5.1)
       oauth (>= 0.3.6)
       oauth2 (>= 0.5.0)
+    heroku (3.8.3)
+      heroku-api (~> 0.3.17)
+      launchy (>= 0.3.2)
+      netrc (~> 0.7.7)
+      rest-client (~> 1.6.1)
+      rubyzip
+    heroku-api (0.3.18)
+      excon (~> 0.27)
+      multi_json (~> 1.8)
     high_voltage (2.1.0)
     hike (1.2.3)
     httparty (0.13.1)
@@ -75,6 +86,8 @@ GEM
       thor (>= 0.14, < 2.0)
     json (1.8.1)
     jwt (1.0.0)
+    launchy (2.4.2)
+      addressable (~> 2.3)
     libv8 (3.16.14.3)
     mail (2.5.4)
       mime-types (~> 1.16)
@@ -85,6 +98,7 @@ GEM
     multi_json (1.10.1)
     multi_xml (0.5.5)
     multipart-post (2.0.0)
+    netrc (0.7.7)
     nokogiri (1.6.2.1)
       mini_portile (= 0.6.0)
     oauth (0.4.7)
@@ -114,7 +128,6 @@ GEM
     rails_12factor (0.0.2)
       rails_serve_static_assets
       rails_stdout_logging
-    rails_apps_pages (0.5.1)
     rails_layout (1.0.19)
     rails_serve_static_assets (0.0.2)
     rails_stdout_logging (0.0.3)
@@ -127,6 +140,9 @@ GEM
     rdoc (4.1.1)
       json (~> 1.4)
     ref (1.0.5)
+    rest-client (1.6.7)
+      mime-types (>= 1.16)
+    rubyzip (1.1.4)
     sass (3.2.19)
     sass-rails (4.0.3)
       railties (>= 4.0.0, < 5.0)
@@ -182,6 +198,7 @@ DEPENDENCIES
   foundation-rails
   gibbon
   google_drive
+  heroku
   high_voltage
   jbuilder (~> 2.0)
   jquery-rails
@@ -189,7 +206,6 @@ DEPENDENCIES
   quiet_assets
   rails (= 4.1.1)
   rails_12factor
-  rails_apps_pages
   rails_layout
   sass-rails (~> 4.0.3)
   sdoc (~> 0.4.0)

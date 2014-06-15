@@ -23,9 +23,5 @@ module Myapp1
     # For Foundation 5
     config.assets.precompile += %w( vendor/modernizr )
 
-# Heroku requires this to be false
-config.assets.initialize_on_precompile=false
-
-
   end
 end
